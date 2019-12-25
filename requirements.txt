@@ -41,7 +41,7 @@ scipy==1.2.1
 six==1.12.0
 tensorboard==1.13.1
 tqdm==4.31.1
-urllib3==1.24.1
+urllib3==1.24.2
 views==0.3
 Werkzeug==0.15.2
 zmq==0.0.0
