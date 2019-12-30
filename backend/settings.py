@@ -26,7 +26,7 @@ SECRET_KEY = 'naw76@dm_j1e)8ab5^_718!)j_ix#*rhcam@l*6k58=n==b!*o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ojas-patwardhan-backend.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -151,5 +151,5 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # Database updates for Heroku
-prod_db  =  dj_database_url.config(conn_max_age=500)
+prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
