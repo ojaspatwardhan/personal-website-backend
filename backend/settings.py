@@ -26,7 +26,7 @@ SECRET_KEY = 'naw76@dm_j1e)8ab5^_718!)j_ix#*rhcam@l*6k58=n==b!*o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://ojas-patwardhan-backend.herokuapp.com/']
+ALLOWED_HOSTS = ['https://ojas-patwardhan-backend.herokuapp.com']
 
 
 # Application definition
