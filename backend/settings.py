@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
     'https://localhost:3000',
-    'https://www.ojas-patwardhan.herokuapp.com'
+    'https://ojas-patwardhan.herokuapp.com'
 ]
 
 # Email Debugging
