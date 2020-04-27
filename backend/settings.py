@@ -26,7 +26,7 @@ SECRET_KEY = 'naw76@dm_j1e)8ab5^_718!)j_ix#*rhcam@l*6k58=n==b!*o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ojas-patwardhan-backend.herokuapp.com']
+ALLOWED_HOSTS = ['ojas-patwardhan-backend.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -75,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -87,8 +86,8 @@ DATABASES = {
 }
 
 # Database updates for Heroku
-prod_db = dj_database_url.config()
-DATABASES['default'].update(prod_db)
+# prod_db = dj_database_url.config()
+# DATABASES['default'].update(prod_db)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -130,6 +129,7 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
     'https://localhost:3000',
+    'http://localhost:3000',
     'https://ojas-patwardhan.herokuapp.com'
 ]
 
@@ -152,4 +152,4 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
