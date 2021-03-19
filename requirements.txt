@@ -5,7 +5,7 @@ automium-web==0.1.1
 Click==7.0
 dj-config-url==0.1.1
 django-cors-headers==3.2.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 Flask==1.1.1
 isort==4.3.21
 itsdangerous==1.1.0
